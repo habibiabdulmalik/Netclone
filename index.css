@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+@font-face {
+    font-family: numito;
+    src: url(./font/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: numito-2;
+    src: url(./font/Gudea-Regular.ttf);
+}
+body {
+    image-rendering: pixelated;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.overlay {
+    height: 90vh;
+    background: linear-gradient(95deg, rgba(0, 0, 0,0.9), rgba(255, 255, 255,0.0));
+}
+
+.bg-img {
+    background-image: url(./pic/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 90vh;
+    image-rendering: pixelated;
+}
+
+.details {
+    padding: 2vw 3vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    color: #ff0000;
+    font-size: 3em;
+    font-family: numito;
+}
+
+
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 13px 13px;
+    border-radius: 3px;
+    color: #000;
+}
+
+nav ul li  .in {
+    background-color: #ff0000;
+    padding: 13px 13px;
+    border-radius: 3px;
+    color: #000;
+}
+
+nav ul li  .in:hover {
+    background-color: #f12a2a;
+}
+
+.content {
+    padding: 60px 0;
+}
+
+.content h1 {
+    font-family: numito;
+    font-size: 3em;
+}
+
+.content .btn button {
+    padding: 13px 13px;
+    background-color: transparent;
+    border: solid 1px #fff;
+    font-size: 1em;
+    margin: 0 0.4vw;
+}
+
+.content .btn button:first-child{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.content .btn button:last-child:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.content .para p:first-child {
+    color: #f3e5e5;
+    font-family: numito-2;
+}
+
+.content .para p:last-child {
+    font-family: numito-2;
+    font-size: 1em;
+    width: 50%;
+    line-height: 25px;
+} 
+
+
+.content h1,
+.content ,.btn,
+.content p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width:768px) {
+
+    nav .logo h1 {
+        color: #ff0000;
+        font-size: 2.1em;
+        font-family: numito;
+    }
+
+    .bg-img {
+        height: 80vh;
+    }
+    .content .para p:last-child {
+    width: 100%;
+   }
+
+   .content h1 {
+    font-size: 2em;
+}
+}
+
+
+/* section-2 */
+.vid {
+    margin: 0 15px;
+}
+
+.vid .list-1 {
+    display: flex;
+    gap: 1em;
+}
+
+.vid .up {
+    font-family: numito-2;
+    font-size: 1.4em;
+    margin: 0 1vw;
+    padding: 2vw 0;
+}
+
+[class^="img-"] {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20%;
+    text-align: center;
+    height: 25vh;
+}
+
+[class^="img-"] p {
+    font-family: numito-2;
+}
+
+.img-1 {
+    background-image: url(./pic/rookie\ cop.jpg);
+}
+
+
+.img-1:hover.img-1 p {
+    display: block;
+}
+
+.img-1 p {
+    background-color: rgba(0, 0, 0,0.6);
+    height: 25vh;
+    padding: 60px 0;
+    display: none;
+    margin: auto;
+}
+
+.pic-2 {
+    background-image: url(./pic/Sweet-Home.jpg);
+}
+
+.pic-3 {
+    background-image: url(./pic/the\ k2.webp);
+}
+
+.pic-4 {
+    background-image: url(./pic/the\ lend\ of\ the\ blue\ sea.jpg);
+}
+
+.pic-5 {
+    background-image: url(./pic/The_Queens_Umbrella-p3.jpg);
+}
+
+.pic-6 {
+    background-image: url(./pic/Tomorrow.webp);
+}
+
+@media screen and (max-width:768px) {
+    [class^="img-"]{
+        width: 31%;
+        margin: 0 auto;
+        height: 20vh;
+    }
+
+
+    .img-1 p {
+        padding: 55px 0;
+    }
+
+
+    .vid .list-1,
+    .popular .vids {
+        flex-wrap: wrap;
+    }
+
+
+    
+}
+
+@media screen and (max-width:425px) {
+    [class^="img-"] {
+        width: 47%;
+    }
+}
+
+.popular .vids{
+    display: flex;
+    gap: 1em;
+}
+
+.popular .lar {
+    font-family: numito-2;
+    font-size: 1.4em;
+    margin: 0 1vw;
+    padding: 2vw 0;
+}
+
+.pic-7 {
+    background-image: url(./pic/home-ani.jpg);
+}
+
+.pic-8 {
+    background-image: url(./pic/wakanda.webp);
+}
+
+.pic-9 {
+    background-image: url(./pic/life\ in\ danger.jpg);
+}
+
+.pic-10 {
+    background-image: url(./pic/Call_Me_Chihiro.jpg);
+}
+
+.pic-11 {
+    background-image: url(./pic/dear\ david.jpg);
+}
+
+.pic-12 {
+    background-image: url(./pic/jung_e.jpg);
+}
+
+.popular {
+    margin: 0 15px;
+}

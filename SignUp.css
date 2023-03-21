@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+@font-face {
+    font-family: numito;
+    src: url(./font/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: numito-2;
+    src: url(./font/Gudea-Regular.ttf);
+}
+
+body {
+    background-color: #302d2d;
+}
+
+
+.back {
+    background-image: url(./pic/netflix-bg.jpg);
+    /* background-size: 100% 100%; */
+    width: 100%;
+    height: auto;
+}
+
+.ground {
+    background: linear-gradient(95deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0));
+    width: 100%;
+    height: auto;
+}
+
+nav .logo a{
+    color: #ff0000;
+    font-size: 2.1em;
+    font-family: numito-2;
+}
+
+nav button {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 13px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+nav button:hover {
+    background-color: #c41515;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4em;
+}
+
+.inner {
+    text-align: center;
+    padding: 7em 0;
+    margin: 0 auto;
+}
+
+.inner h1 {
+    /* width: 100%; */
+    font-size: 3.4em;
+    font-family: numito;
+    color: #ffffff;
+}
+
+.inner p {
+    font-family: numito;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.inner form input {
+    height: auto;
+    padding: 1em 1em;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1em;
+    border: 2px solid #b3a3a3;
+}
+
+.inner form input:first-child {
+    width: 40%;
+}
+
+.inner form input:last-child {
+    background-color: #ff0000;
+    border: none;
+    color: #ffffff;
+}
+
+.inner h1,
+.inner p,
+.inner form {
+    padding: 0.52em 0;
+}
+
+@media screen and (max-width:768px) {
+    .inner {
+        padding: 5em 0;
+    }
+
+    .inner h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:598px) {
+    .inner form input:first-child {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .inner {
+        padding: 1em 0;
+    }
+}
+
+/* section-1 */
+
+.container-1 {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8em 3em;
+    margin-top: 0.7em;
+    /* flex-wrap: wrap; */
+    gap: 2em;
+}
+
+.text {
+    margin: 0 auto;
+}
+
+.container-1 h1 {
+    font-family: numito;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.container-1 p {
+    width: 80%;
+    font-family: numito-2;
+    font-size: 1.4em;
+}
+
+.container-1 img {
+    width: 50%;
+    border-radius: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .container-1 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 6em 1em;
+    }
+
+    .container-1 h1 {
+        font-size: 2em;
+    }
+
+    .container-1 p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .container-1 img {
+        width: 99%;
+    }
+}
+
+/* section-2 */
+
+.container-2 {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8em 3em;
+    margin-top: 0.7em;
+    /* flex-wrap: wrap; */
+    gap: 2em;
+}
+
+.container-2 h1 {
+    font-family: numito;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.container-2 p {
+    width: 80%;
+    font-family: numito-2;
+    font-size: 1.4em;
+}
+
+.container-2 img {
+    width: 50%;
+    border-radius: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .container-2 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 6em 1em;
+    }
+
+    .container-2 h1 {
+        font-size: 2em;
+    }
+
+    .container-2 p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .container-2 img {
+        width: 99%;
+    }
+}
+
+/* section-3 */
+
+.container-3 {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8em 3em;
+    margin-top: 0.7em;
+    /* flex-wrap: wrap; */
+    gap: 2em;
+}
+
+.container-3 h1 {
+    font-family: numito;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.container-3 p {
+    width: 80%;
+    font-family: numito-2;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width:768px) {
+    .container-3 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 6em 1em;
+    }
+
+    .container-3 h1 {
+        font-size: 2em;
+    }
+
+    .container-3 p {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+
+/* section-4 */
+
+.container-4 {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8em 3em;
+    margin-top: 0.7em;
+    /* flex-wrap: wrap; */
+    gap: 2em;
+}
+
+.container-4 h1 {
+    font-family: numito;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.container-4 p {
+    width: 80%;
+    font-family: numito-2;
+    font-size: 1.4em;
+}
+
+.container-4 img {
+    width: 50%;
+    border-radius: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .container-4 {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 6em 1em;
+    }
+
+    .container-4 h1 {
+        font-size: 2em;
+    }
+
+    .container-4 p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .container-4 img {
+        width: 99%;
+    }
+}
+
+/* section-5 */
+.container-5 {
+    background-color: #000;
+    color: #fff;
+    padding: 8em 3em;
+    margin-top: 0.7em;
+}
+
+.container-5 .first {
+    font-family: numito-2;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+
+.container-5 [class^="box-"] {
+    background-color: #302d2d;
+    margin: 1em 0;
+    padding: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: numito;
+    font-size: 0.9em;
+    transition: transform 0.8s ease;
+    width: 100%;
+}
+
+.container-5 [class^="box-"]:hover {
+    transform: translateY(8px);
+}
+
+.container-5 [class^="box-"] i {
+    font-size: 1.8em;
+}
+
+@media screen and (max-width:768px) {
+
+    .container-5 {
+        padding: 3em 1em;
+    }
+
+    .container-5 .first {
+        font-size: 2em;
+    }
+    .container-5 h1 {
+        font-size: 1em;
+    }
+
+    .container-5 [class^="box-"] i {
+        font-size: 1em;
+    }
+}
+
+form {
+    text-align: center;
+    margin: 0.7em auto;
+}
+
+form p {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: numito;
+}
+
+
+form input {
+    height: auto;
+    padding: 1em 1em;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1em;
+    border: 2px solid #b3a3a3;
+}
+
+form input:first-child {
+    width: 40%;
+}
+
+form input:last-child {
+    background-color: #ff0000;
+    border: none;
+    color: #ffffff;
+}
+
+form p,
+form input {
+    margin: 0.3em 0;
+}
+
+@media screen and (max-width:768px) {
+    form p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:598px) {
+    .inner form input:first-child {
+        width: 90%;
+        margin: 15px 0;
+    }
+}
+
+/* section-6 */
+
+.container-6 {
+    font-family: numito;
+    background-color: #000;
+    color: #e0dada;
+    padding: 8em 3em;
+    margin-top: 0.7em;
+}
+
+.container-6 p:nth-child(1) {
+    text-decoration: underline;
+}
+
+.container-6 .last {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.container-6 .last p {
+    margin: 0.4em 0;
+    /* background-color: red;? */
+    /* margin: 12px 0;/ */
+    width: 25%;
+    padding: 0.5em 0;
+}
+
+@media screen and (max-width:425px) {
+    .container-6 .last p {
+        width: 35%;
+    }
+}
