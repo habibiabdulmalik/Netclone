@@ -143,6 +143,10 @@ a {
     [class^="para-"] {
         padding: 10px 0;
     }
+
+    .para .para-3 {
+        line-height: 2em;
+    }
 }
 
 
