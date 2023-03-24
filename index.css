@@ -14,9 +14,15 @@
     font-family: numito-2;
     src: url(./font/Gudea-Regular.ttf);
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     image-rendering: pixelated;
     background-color: #000;
+    position: relative;
 }
 
 a {
@@ -25,17 +31,46 @@ a {
 
 .overlay {
     height: 90vh;
-    background: linear-gradient(95deg, rgba(0, 0, 0,0.9), rgba(255, 255, 255,0.0));
+    background: linear-gradient(95deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.0));
 }
 
 .bg-img {
-    background-image: url(./pic/2.jpg);
+    /* background-image: url(./pic/2.jpg); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height: 90vh;
     image-rendering: pixelated;
+    animation: back 50s infinite alternate-reverse;
 }
+
+@keyframes back {
+    0% {
+        background-image: url(./pic/Sweet-Home.jpg);
+        content: "me name";
+    }
+
+    20% {
+        background-image: url(./pic/jung_e.jpg);
+    }
+
+    40% {
+        background-image: url(./pic/Call_Me_Chihiro.jpg);
+    }
+
+    60% {
+        background-image: url(./pic/home-ani.jpg);
+    }
+
+    80% {
+        background-image: url(./pic/wakanda.webp);
+    }
+
+    100% {
+        background-image: url(./pic/life\ in\ danger.jpg);
+    }
+}
+
 
 .details {
     padding: 2vw 3vw;
@@ -77,14 +112,14 @@ nav ul li {
     color: #000;
 }
 
-nav ul li  .in {
+nav ul li .in {
     background-color: #ff0000;
     padding: 13px 13px;
     border-radius: 3px;
     color: #000;
 }
 
-nav ul li  .in:hover {
+nav ul li .in:hover {
     background-color: #f12a2a;
 }
 
@@ -105,7 +140,7 @@ nav ul li  .in:hover {
     margin: 0 0.4vw;
 }
 
-.content .btn button:first-child{
+.content .btn button:first-child {
     background-color: #ffffff;
     color: #000;
 }
@@ -125,11 +160,12 @@ nav ul li  .in:hover {
     font-size: 1em;
     width: 50%;
     line-height: 25px;
-} 
+}
 
 
 .content h1,
-.content ,.btn,
+.content,
+.btn,
 .content p {
     margin: 10px 0;
 }
@@ -145,13 +181,14 @@ nav ul li  .in:hover {
     .bg-img {
         height: 80vh;
     }
-    .content .para p:last-child {
-    width: 100%;
-   }
 
-   .content h1 {
-    font-size: 2em;
-}
+    .content .para p:last-child {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
 }
 
 
@@ -164,6 +201,7 @@ nav ul li  .in:hover {
     display: flex;
     gap: 1em;
 }
+
 
 .vid .up {
     font-family: numito-2;
@@ -194,7 +232,7 @@ nav ul li  .in:hover {
 }
 
 .img-1 p {
-    background-color: rgba(0, 0, 0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 25vh;
     padding: 60px 0;
     display: none;
@@ -222,7 +260,7 @@ nav ul li  .in:hover {
 }
 
 @media screen and (max-width:768px) {
-    [class^="img-"]{
+    [class^="img-"] {
         width: 31%;
         margin: 0 auto;
         height: 20vh;
@@ -235,12 +273,15 @@ nav ul li  .in:hover {
 
 
     .vid .list-1,
-    .popular .vids {
+    .popular .list-2,
+    .trending .list-3,
+    .rate .list-4,
+    .series .list-5 {
         flex-wrap: wrap;
     }
 
 
-    
+
 }
 
 @media screen and (max-width:425px) {
@@ -249,7 +290,7 @@ nav ul li  .in:hover {
     }
 }
 
-.popular .vids{
+.popular .list-2 {
     display: flex;
     gap: 1em;
 }
@@ -262,29 +303,70 @@ nav ul li  .in:hover {
 }
 
 .pic-7 {
-    background-image: url(./pic/home-ani.jpg);
+    background-image: url(./pic/16-9.jpeg);
 }
 
 .pic-8 {
-    background-image: url(./pic/wakanda.webp);
+    background-image: url(./pic/Faltu_\(TV_series\).jpg);
 }
 
 .pic-9 {
-    background-image: url(./pic/life\ in\ danger.jpg);
+    background-image: url(./pic/teri-meri-doriyaan.webp);
 }
 
 .pic-10 {
-    background-image: url(./pic/Call_Me_Chihiro.jpg);
+    background-image: url(./pic/mandalorian.webp);
 }
 
 .pic-11 {
-    background-image: url(./pic/dear\ david.jpg);
+    background-image: url(./pic/Rabb_Se_Hai_Dua.jpg);
 }
 
 .pic-12 {
     background-image: url(./pic/jung_e.jpg);
 }
 
-.popular {
+.popular,
+.trending,
+.rate,
+.series {
     margin: 0 15px;
+}
+
+
+
+.trending .list-3 {
+    display: flex;
+    gap: 1em;
+}
+
+.trending .trend {
+    font-family: numito-2;
+    font-size: 1.4em;
+    margin: 0 1vw;
+    padding: 2vw 0;
+}
+
+.rate .list-4 {
+    display: flex;
+    gap: 1em;
+}
+
+.rate .rated{
+    font-family: numito-2;
+    font-size: 1.4em;
+    margin: 0 1vw;
+    padding: 2vw 0;
+}
+
+.series .list-5 {
+    display: flex;
+    gap: 1em;
+}
+
+.series .serie{
+    font-family: numito-2;
+    font-size: 1.4em;
+    margin: 0 1vw;
+    padding: 2vw 0;
 }
